@@ -1,0 +1,67 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+Starting C synthesis ...
+/home/qzhang/Programs/Xilinx/Vitis_HLS/2021.1/bin/vitis_hls /home/qzhang/workspace/repair-test/solution1/csynth.tcl
+INFO: [HLS 200-10] Running '/home/qzhang/Programs/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'qzhang' on host 'qian.lan' (Linux_x86_64 version 5.4.0-70-generic) on Mon Nov 29 13:24:08 PST 2021
+INFO: [HLS 200-10] On os Pop!_OS 18.04 LTS
+INFO: [HLS 200-10] In directory '/home/qzhang/workspace'
+Sourcing Tcl script '/home/qzhang/workspace/repair-test/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: open_project repair-test 
+INFO: [HLS 200-10] Opening project '/home/qzhang/workspace/repair-test'.
+INFO: [HLS 200-1510] Running: set_top top 
+INFO: [HLS 200-1510] Running: add_files repair-test/struct.cpp -cflags -std=c++11 
+INFO: [HLS 200-10] Adding design file 'repair-test/struct.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb repair-test/0.dat.txt 
+WARNING: [HLS 200-40] Cannot find test bench file 'repair-test/0.dat.txt'
+INFO: [HLS 200-1510] Running: add_files -tb repair-test/main.cpp -cflags -std=c++11 -fpermissive 
+INFO: [HLS 200-10] Adding test bench file 'repair-test/main.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vitis 
+INFO: [HLS 200-10] Opening solution '/home/qzhang/workspace/repair-test/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 252.060 MB.
+INFO: [HLS 200-10] Analyzing design file 'repair-test/struct.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.79 seconds. CPU system time: 0.36 seconds. Elapsed time: 0.57 seconds; current allocated memory: 252.439 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read(int&)' into 'hls::stream<int, 0>::read()' (/home/qzhang/Programs/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'If2::doRead() const' (repair-test/struct.cpp:12:12)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'If2::doWrite(int) const' (repair-test/struct.cpp:17:6)
+ERROR: [HLS 214-134] Pointer to pointer is not supported (repair-test/struct.cpp:8:0)
+ERROR: [HLS 214-134] in function 'If2::If2(hls::stream<int, 0>&, hls::stream<int, 0>&)': Pointer to pointer is not supported (repair-test/struct.cpp:8:51)
+ERROR: [HLS 214-134] in function 'If2::If2(hls::stream<int, 0>&, hls::stream<int, 0>&)': Pointer to pointer is not supported (repair-test/struct.cpp:8:58)
+ERROR: [HLS 214-134] in function 'top(hls::stream<int, 0>&, hls::stream<int, 0>&)': Pointer to pointer is not supported (repair-test/struct.cpp:29:16)
+ERROR: [HLS 214-135] Syn check fail!
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3.91 seconds. CPU system time: 0.73 seconds. Elapsed time: 4.02 seconds; current allocated memory: 254.955 MB.
+Pre-synthesis failed.
+    while executing
+"source /home/qzhang/workspace/repair-test/solution1/csynth.tcl"
+    invoked from within
+"hls::main /home/qzhang/workspace/repair-test/solution1/csynth.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 6.51 seconds. Total CPU system time: 1.22 seconds. Total elapsed time: 5.87 seconds; peak allocated memory: 254.634 MB.
+Finished C synthesis.
+
+
