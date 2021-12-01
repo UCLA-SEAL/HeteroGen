@@ -1,0 +1,570 @@
+INFO-FLOW: Workspace /home/qzhang/CLionProjects/llvm-clang-samples/src/hls_test/solution1 opened at Mon Apr 05 15:20:31 PDT 2021
+Execute     set_part xcvu9p-fsgd2104-3-e -tool vivado 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-fsgd2104:-3-e 
+Execute         get_default_platform 
+Execute         license_isbetapart xcvu9p 
+Command         license_isbetapart done; error code: 1; 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/dsp48e2.hlp 
+Execute           get_default_platform 
+Execute           config_chip_info -quiet -resource  {SLICE 147780} {LUT 1182240}   {FF 2364480} {DSP48E 6840}  {BRAM 4320} {URAM 960}  
+Execute           config_chip_info -quiet -speed medium 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 147780} {LUT 1182240}   {FF 2364480} {DSP48E 6840}  {BRAM 4320} {URAM 960}  
+Execute         config_chip_info -quiet -speed fast 
+Command       add_library done; 0.11 sec.
+Execute       add_library xilinx/virtexuplus/virtexuplus_fpv7 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_hp.hlp 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-fsgd2104-3-e'
+Execute       get_default_platform 
+Command     set_part done; 0.15 sec.
+Execute     create_clock -period 10 -name default 
+Execute       config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     csim_design -O 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute       is_encrypted /home/qzhang/CLionProjects/llvm-clang-samples/src/1665samples.txt 
+Execute       is_xip /home/qzhang/CLionProjects/llvm-clang-samples/src/1665samples.txt 
+Execute       is_encrypted /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/testbed.cpp 
+Execute       is_xip /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/testbed.cpp 
+Execute       is_encrypted /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/main.cpp 
+Execute       is_xip /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/main.cpp 
+Execute       is_encrypted /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/l2norm.cpp 
+Execute       is_xip /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/l2norm.cpp 
+Execute       get_default_platform 
+Execute       source run_sim.tcl 
+Command       ap_source done; 0.74 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command     csim_design done; 5.14 sec.
+Execute     cleanup_all 
+INFO-FLOW: Workspace /home/qzhang/CLionProjects/llvm-clang-samples/src/hls_test/solution1 opened at Mon Apr 05 15:24:05 PDT 2021
+Execute       config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/dsp48e2.hlp 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 147780} {LUT 1182240}   {FF 2364480} {DSP48E 6840}  {BRAM 4320} {URAM 960}  
+Execute         config_chip_info -quiet -speed medium 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_hp.hlp 
+Execute       source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       set_part xcvu9p-fsgd2104-3-e 
+Execute         add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-fsgd2104:-3-e 
+Execute           get_default_platform 
+Execute           license_isbetapart xcvu9p 
+Command           license_isbetapart done; error code: 1; 
+Execute           open_platform DefaultPlatform 
+Execute           import_lib /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/dsp48e2.hlp 
+Execute             get_default_platform 
+Execute             config_chip_info -quiet -resource  {SLICE 147780} {LUT 1182240}   {FF 2364480} {DSP48E 6840}  {BRAM 4320} {URAM 960}  
+Execute             config_chip_info -quiet -speed medium 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute                   source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute                   source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute           get_default_platform 
+Execute           config_chip_info -quiet -resource  {SLICE 147780} {LUT 1182240}   {FF 2364480} {DSP48E 6840}  {BRAM 4320} {URAM 960}  
+Execute           config_chip_info -quiet -speed fast 
+Execute         add_library xilinx/virtexuplus/virtexuplus_fpv7 
+Execute           get_default_platform 
+Execute           open_platform DefaultPlatform 
+Execute           import_lib /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                   source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute                   source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_hp.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-fsgd2104-3-e'
+Execute         get_default_platform 
+Command       set_part done; 0.15 sec.
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 147780} {LUT 1182240}   {FF 2364480} {DSP48E 6840}  {BRAM 4320} {URAM 960}  
+Execute       config_chip_info -quiet -speed fast 
+Command     open_solution done; 0.29 sec.
+Execute     set_part xcvu9p-fsgd2104-3-e -tool vivado 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-fsgd2104:-3-e 
+Execute         get_default_platform 
+Execute         license_isbetapart xcvu9p 
+Command         license_isbetapart done; error code: 1; 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/dsp48e2.hlp 
+Execute           get_default_platform 
+Execute           config_chip_info -quiet -resource  {SLICE 147780} {LUT 1182240}   {FF 2364480} {DSP48E 6840}  {BRAM 4320} {URAM 960}  
+Execute           config_chip_info -quiet -speed medium 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 147780} {LUT 1182240}   {FF 2364480} {DSP48E 6840}  {BRAM 4320} {URAM 960}  
+Execute         config_chip_info -quiet -speed fast 
+Command       add_library done; 0.11 sec.
+Execute       add_library xilinx/virtexuplus/virtexuplus_fpv7 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_hp.hlp 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       get_default_platform 
+Command     set_part done; 0.15 sec.
+Execute     create_clock -period 10 -name default 
+Execute     csim_design -O 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute       source csim/.lst_opt.tcl 
+Execute       is_encrypted /home/qzhang/CLionProjects/llvm-clang-samples/src/1665samples.txt 
+Execute       is_xip /home/qzhang/CLionProjects/llvm-clang-samples/src/1665samples.txt 
+Execute       is_encrypted /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/testbed.cpp 
+Execute       is_xip /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/testbed.cpp 
+Execute       is_encrypted /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/main.cpp 
+Execute       is_xip /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/main.cpp 
+Execute       is_encrypted /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/l2norm.cpp 
+Execute       is_xip /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/l2norm.cpp 
+Execute       get_default_platform 
+Execute       source run_sim.tcl 
+Command       ap_source done; 0.78 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command     csim_design done; 0.82 sec.
+Execute     cleanup_all 
+INFO-FLOW: Workspace /home/qzhang/CLionProjects/llvm-clang-samples/src/hls_test/solution1 opened at Mon Apr 05 16:25:33 PDT 2021
+Execute       config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/dsp48e2.hlp 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 147780} {LUT 1182240}   {FF 2364480} {DSP48E 6840}  {BRAM 4320} {URAM 960}  
+Execute         config_chip_info -quiet -speed medium 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_hp.hlp 
+Execute       source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       set_part xcvu9p-fsgd2104-3-e 
+Execute         add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-fsgd2104:-3-e 
+Execute           get_default_platform 
+Execute           license_isbetapart xcvu9p 
+Command           license_isbetapart done; error code: 1; 
+Execute           open_platform DefaultPlatform 
+Execute           import_lib /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/dsp48e2.hlp 
+Execute             get_default_platform 
+Execute             config_chip_info -quiet -resource  {SLICE 147780} {LUT 1182240}   {FF 2364480} {DSP48E 6840}  {BRAM 4320} {URAM 960}  
+Execute             config_chip_info -quiet -speed medium 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute                   source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute                   source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute           get_default_platform 
+Execute           config_chip_info -quiet -resource  {SLICE 147780} {LUT 1182240}   {FF 2364480} {DSP48E 6840}  {BRAM 4320} {URAM 960}  
+Execute           config_chip_info -quiet -speed fast 
+Command         add_library done; 0.11 sec.
+Execute         add_library xilinx/virtexuplus/virtexuplus_fpv7 
+Execute           get_default_platform 
+Execute           open_platform DefaultPlatform 
+Execute           import_lib /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                   source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute                   source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_hp.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-fsgd2104-3-e'
+Execute         get_default_platform 
+Command       set_part done; 0.16 sec.
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 147780} {LUT 1182240}   {FF 2364480} {DSP48E 6840}  {BRAM 4320} {URAM 960}  
+Execute       config_chip_info -quiet -speed fast 
+Command     open_solution done; 0.28 sec.
+Execute     set_part xcvu9p-fsgd2104-3-e -tool vivado 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-fsgd2104:-3-e 
+Execute         get_default_platform 
+Execute         license_isbetapart xcvu9p 
+Command         license_isbetapart done; error code: 1; 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/dsp48e2.hlp 
+Execute           get_default_platform 
+Execute           config_chip_info -quiet -resource  {SLICE 147780} {LUT 1182240}   {FF 2364480} {DSP48E 6840}  {BRAM 4320} {URAM 960}  
+Execute           config_chip_info -quiet -speed medium 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 147780} {LUT 1182240}   {FF 2364480} {DSP48E 6840}  {BRAM 4320} {URAM 960}  
+Execute         config_chip_info -quiet -speed fast 
+Command       add_library done; 0.11 sec.
+Execute       add_library xilinx/virtexuplus/virtexuplus_fpv7 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute             source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_hp.hlp 
+Execute         source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute           source /home/qzhang/Programs/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       get_default_platform 
+Command     set_part done; 0.15 sec.
+Execute     create_clock -period 10 -name default 
+Execute     csim_design -O 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute       source csim/.lst_opt.tcl 
+Execute       is_encrypted /home/qzhang/CLionProjects/llvm-clang-samples/src/1665samples.txt 
+Execute       is_xip /home/qzhang/CLionProjects/llvm-clang-samples/src/1665samples.txt 
+Execute       is_encrypted /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/testbed.cpp 
+Execute       is_xip /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/testbed.cpp 
+Execute       is_encrypted /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/main.cpp 
+Execute       is_xip /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/main.cpp 
+Execute       is_encrypted /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/l2norm.cpp 
+Execute       is_xip /home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/l2norm.cpp 
+Execute       get_default_platform 
+Execute       source run_sim.tcl 
+Command       ap_source done; 0.74 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command     csim_design done; 0.77 sec.
+Execute     cleanup_all 

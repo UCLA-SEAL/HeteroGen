@@ -1,0 +1,101 @@
+Analyzing error messages...
+Error with If2::If2
+
+++Now I will apply some edits...
++++Attempt 1
+++++Now I will try the deletion edit...
++++++visiting AST...
+VisitDecl: Record
+Visiting NameDecl If2
+VisitDecl: Field
+Visiting FieldDecl If2::hls
+Visiting NameDecl If2::hls
+VisitDecl: Field
+Visiting FieldDecl If2::If2
+Delete 64
+Visiting NameDecl If2::If2
+Delete function If2::If2
+VisitDecl: Function
+Visiting NameDecl top
+Visiting Function: top
+VisitDecl: ParmVar
+Visiting NameDecl hls
+#include <hls_stream.h>
+
+struct If2 {
+  hls::stream<int> &in;
+  hls::stream<int> &out;
+
+  
+
+  int doRead() const {
+   #pragma HLS INLINE off
+    return in.read();
+  }
+
+  void doWrite(int v) const {
+   #pragma HLS INLINE off
+    out.write(v);
+  }
+
+  void do1() const {
+    // do something with in and out
+    doWrite(doRead() + 1);
+  }
+};
+
+void top(hls::stream<int> &in, hls::stream<int> &out) {
+	#pragma HLS DATAFLOW
+	static If2 a(in, out);
+a.do1();
+}
++++Attempt 2
+++++Now I will try to make the variables static...
++++++visiting AST...
+VisitDecl: Record
+Visiting NameDecl If2
+VisitDecl: Field
+Visiting FieldDecl If2::hls
+Visiting NameDecl If2::hls
+VisitDecl: Field
+Visiting FieldDecl If2::If2
+Delete 64
+Visiting NameDecl If2::If2
+Delete function If2::If2
+VisitDecl: Function
+Visiting NameDecl top
+Visiting Function: top
+VisitDecl: ParmVar
+Visiting NameDecl hls
+#include <hls_stream.h>
+
+struct If2 {
+  hls::stream<int> &in;
+  hls::stream<int> &out;
+
+  
+
+  int doRead() const {
+   #pragma HLS INLINE off
+    return in.read();
+  }
+
+  void doWrite(int v) const {
+   #pragma HLS INLINE off
+    out.write(v);
+  }
+
+  void do1() const {
+    // do something with in and out
+    doWrite(doRead() + 1);
+  }
+};
+
+void top(hls::stream<int> &in, hls::stream<int> &out) {
+	#pragma HLS DATAFLOW
+	static If2 a(in, out);
+a.do1();
+}
+Type transformation is not detected...
+It seems no more edits are applicable for this error type.
+Have a nice day!

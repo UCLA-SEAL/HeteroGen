@@ -1,0 +1,26 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /home/qzhang/Programs/Xilinx/Vivado/2018.3/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/home/qzhang/Programs/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'qzhang' on host 'qian.lan' (Linux_x86_64 version 5.4.0-70-generic) on Mon Apr 05 16:25:33 PDT 2021
+INFO: [HLS 200-10] On os Pop!_OS 18.04 LTS
+INFO: [HLS 200-10] In directory '/home/qzhang/CLionProjects/llvm-clang-samples/src'
+INFO: [HLS 200-10] Opening project '/home/qzhang/CLionProjects/llvm-clang-samples/src/hls_test'.
+INFO: [HLS 200-10] Adding design file '/home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/l2norm.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file '/home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/main.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file '/home/qzhang/CLionProjects/llvm-clang-samples/hls_kernel/testbed.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file '1665samples.txt' to the project
+INFO: [HLS 200-10] Opening solution '/home/qzhang/CLionProjects/llvm-clang-samples/src/hls_test/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-fsgd2104-3-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+make: 'csim.exe' is up to date.
+Reading the samples
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [Common 17-206] Exiting vivado_hls at Mon Apr  5 16:25:34 2021...
