@@ -472,7 +472,7 @@ void static_var(string file_name) {
 int main(int argc, char *argv[])
 {
     if (argc != 3) {
-        llvm::errs() << "Usage: delete_code <filename> <logname>\n";
+        llvm::errs() << "Usage: repair <filename> <logname>\n";
         return 1;
     }
     std::cout<<"Analyzing error messages..."<<std::endl;

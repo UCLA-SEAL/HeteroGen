@@ -3,7 +3,10 @@
 # HeteroGen-Fuzzing
 This folder contains our fuzzing tool for coverage-guided test input generation.
 
-## Setup AFL
+## Prerequisite
+This test generation tool is tested using Ubuntu 18.04 with gcc 7.5.0.
+
+## How to install this fuzzing tool?
 Our tool is built on top of AFL `https://lcamtuf.coredump.cx/afl/`. Please note that you do not have to download and install afl-fuzz because it has already been integrated into our tool. We use afl-gcc/afl-g++ to instrument test programs for branch coverage monitoring.
 
 ```bash
@@ -27,4 +30,4 @@ Go back to the `2-test-generation` folder, type the following command:
 ```bash
 ./heterogen-fuzz good-seeds/ good-outputs/ 1000 ../test-program/a.out
 ```
-You can find the generated test inputs in `good-outputs` folder. The generated inputs will be used to check behavior preservation in the iterative code edit process.
+You can find the generated test inputs in `good-outputs` folder. The generated inputs will be used to check behavior preservation in the automated code edit process. This step generates the results presented in Table 4. Please note that fuzzing is a random test generation process; thus, the results vary significantly across different runs.
