@@ -1,23 +1,23 @@
 
 
-# HeteroGen-Fuzzing
+# HeteroGen-fuzz
 This folder contains our fuzzing tool for coverage-guided test input generation.
 
 ## Prerequisite
-This test generation tool is tested using Ubuntu 18.04 with gcc 7.5.0.
+This test generation tool is developed using Ubuntu 18.04 with gcc 7.5.0.
 
 ## How to install this fuzzing tool?
 Our tool is built on top of AFL `https://lcamtuf.coredump.cx/afl/`. Please note that you do not have to download and install afl-fuzz because it has already been integrated into our tool. We use afl-gcc/afl-g++ to instrument test programs for branch coverage monitoring.
 
 ```bash
-# Build HeteroGen-Fuzzing
+# Build HeteroGen-fuzz
 cd 2-test-generation && make
 
 # Set AFL directory location
-export AFL_DIR=$(pwd)/afl
+export AFL_DIR=$(pwd)/2-test-generation
 ```
 
-## How to use HeteroGen-Fuzzing?
+## How to use HeteroGen-fuzz?
 ### Step 1. Instrument the test program
 Go to the folder test-program, type the following command:
 ```bash
