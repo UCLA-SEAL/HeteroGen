@@ -4,21 +4,14 @@
 This folder contains our fuzzing tool for coverage-guided test input generation.
 
 ## Setup AFL
-Our tool is built on top of AFL `https://lcamtuf.coredump.cx/afl/`. Please use the following commands to download and install afl-fuzz. We use afl-gcc/afl-g++ to instrument test programs for branch coverage monitoring.
+Our tool is built on top of AFL `https://lcamtuf.coredump.cx/afl/`. Please note that you do not have to download and install afl-fuzz because it has already been integrated into our tool. We use afl-gcc/afl-g++ to instrument test programs for branch coverage monitoring.
 
 ```bash
-# Clone and build AFL
-git clone https://github.com/google/afl && (cd afl && make)
+# Build HeteroGen-Fuzzing
+cd 2-test-generation && make
 
 # Set AFL directory location
 export AFL_DIR=$(pwd)/afl
-```
-
-## Install HeteroGen-Fuzzing
-Please use the following command to compile the fuzzing tool used in HeteroGen.
-
-```bash
-g++ -fpermissive -o heterogen-fuzz heterogen-fuzz.cpp
 ```
 
 ## How to use HeteroGen-Fuzzing?

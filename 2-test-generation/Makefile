@@ -24,7 +24,7 @@ MISC_PATH   = $(PREFIX)/share/afl
 
 # PROGS intentionally omit afl-as, which gets installed elsewhere.
 
-PROGS       = afl-gcc afl-fuzz afl-showmap afl-tmin afl-gotcpu afl-analyze fuzz
+PROGS       = afl-gcc afl-fuzz afl-showmap afl-tmin afl-gotcpu afl-analyze heterogen-fuzz
 SH_PROGS    = afl-plot afl-cmin afl-whatsup
 
 CFLAGS     ?= -O3 -funroll-loops
@@ -84,8 +84,8 @@ afl-analyze: afl-analyze.c $(COMM_HDR) | test_x86
 
 afl-gotcpu: afl-gotcpu.c $(COMM_HDR) | test_x86
 	$(CC) $(CFLAGS) $@.c -o $@ $(LDFLAGS)
-fuzz: hetero-fuzz.cpp
-	g++ -fpermissive -o fuzz hetero-fuzz.cpp
+heterogen-fuzz: heterogen-fuzz.cpp
+	g++ -fpermissive -o heterogen-fuzz heterogen-fuzz.cpp
 
 ifndef AFL_NO_X86
 
