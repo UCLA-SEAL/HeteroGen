@@ -12,9 +12,10 @@ This project is led by Professor Miryung Kim(http://web.cs.ucla.edu/~miryung)'s 
 
 [Jiyuan Wang](http://web.cs.ucla.edu/~wangjiyuan): PhD student, wangjiyuan@cs.ucla.edu;
 
+[Harry Xu](http://web.cs.ucla.edu/~harryxu/): Associate Professor, harryxu@cs.ucla.edu; 
+
 [Miryung Kim](http://web.cs.ucla.edu/~miryung/): Professor at UCLA, miryung@cs.ucla.edu;
 
-First three authors are equal co-authors and they are ordered alphabetically. 
 
 ## How to cite 
 Please refer to our ASPLOS'22 paper, [HeteroGen: transpiling C to heterogeneous HLS code with automated test generation and program repair](http://web.cs.ucla.edu/~miryung/Publications/ASPLOS22_heterogen.pdf) for more details. 
